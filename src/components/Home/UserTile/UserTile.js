@@ -1,14 +1,10 @@
 import './UserTile.css';
 
-const UserTile = () => {
+const UserTile = ({ picture, fullName, city, country }) => {
     return (
         <div className="user-tile">
             <div className="user-img-container">
-                <img
-                    className="user-img"
-                    src="https://randomuser.me/api/portraits/women/74.jpg"
-                    alt="user-profile"
-                />
+                <img className="user-img" src={picture} alt="user-profile" />
             </div>
             <div className="user-text-info-container">
                 <div className="user-text-info-item-container">
@@ -16,25 +12,24 @@ const UserTile = () => {
                         person
                     </span>
                     <p className="user-text-info-item user-full-name">
-                        Hannchen Dröge
+                        {fullName}
                     </p>
                 </div>
                 <div className="user-text-info-item-container">
                     <span className="user-text-info-icon material-icons">
                         apartment
                     </span>
-                    <p className="user-text-info-item user-city">
-                        Bad Gottleuba Bad Gottleuba
-                    </p>
+                    <p className="user-text-info-item user-city">{city}</p>
                 </div>
                 <div className="user-text-info-item-container">
                     <span className="user-text-info-icon material-icons">
                         public
                     </span>
-                    <p className="user-text-info-item user-country">Germany</p>
+                    <p className="user-text-info-item user-country">
+                        {country}
+                    </p>
                 </div>
             </div>
-            {/* <button className="user-details-btn">Details</button> */}
         </div>
     );
 };
