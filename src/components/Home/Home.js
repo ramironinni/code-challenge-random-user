@@ -8,7 +8,6 @@ const Home = () => {
             <div className="user-tiles-container">
                 <UserTile />
                 <UserTile />
-                <UserTile />
             </div>
             <NavigationBtns />
         </div>

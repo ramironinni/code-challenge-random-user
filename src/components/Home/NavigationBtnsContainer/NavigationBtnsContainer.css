@@ -1,9 +1,11 @@
 .navigation-btns {
-    display: flex;
-    margin-top: 1rem;
+    /* display: flex;
+    margin-top: 1rem; */
 }
 
 .navigation-btn {
+    position: absolute;
+    bottom: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,4 +14,13 @@
     padding: 0.3rem;
     color: var(--color-light);
     background-color: var(--color-primary);
+    box-shadow: 0.1rem 0.1rem 0.5rem #000000;
+}
+
+.navigation-btn-before {
+    left: 1rem;
+}
+
+.navigation-btn-next {
+    right: 1rem;
 }
