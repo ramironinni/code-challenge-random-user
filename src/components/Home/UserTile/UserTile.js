@@ -1,8 +1,12 @@
 import './UserTile.css';
+import { Link } from 'react-router-dom';
 
-const UserTile = ({ picture, fullName, city, country }) => {
+const UserTile = ({ picture, fullName, city, country, user }) => {
     return (
-        <div className="user-tile">
+        <Link
+            to={{ pathname: '/user-details', state: { user } }}
+            className="user-tile"
+        >
             <div className="user-img-container">
                 <img className="user-img" src={picture} alt="user-profile" />
             </div>
@@ -30,7 +34,7 @@ const UserTile = ({ picture, fullName, city, country }) => {
                     </p>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 

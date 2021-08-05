@@ -5,7 +5,7 @@ import NavigationBtn from './NavigationBtn/NavigationBtn';
 
 const Home = () => {
     const { data, isPending, error } = useFetch(
-        'https://randomuser.me/api/?results=50'
+        'https://randomuser.me/api/?inc=name,location,email,login,picture&results=50'
     );
 
     return (
@@ -22,6 +22,7 @@ const Home = () => {
                             }
                             city={data.results[0].location.city}
                             country={data.results[0].location.country}
+                            user={data.results[0]}
                         />
                         <UserTile
                             picture={data.results[1].picture.medium}
@@ -32,6 +33,7 @@ const Home = () => {
                             }
                             city={data.results[1].location.city}
                             country={data.results[1].location.country}
+                            user={data.results[1]}
                         />
                     </div>
                     <div className="navigation-btns">
@@ -46,6 +48,7 @@ const Home = () => {
                     </div>
                 </div>
             )}
+            {/* {data && console.log(data)} */}
             {isPending && <div>Loading ...</div>}
             {error && <div>{error}</div>}
         </div>
