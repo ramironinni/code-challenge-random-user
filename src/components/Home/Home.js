@@ -36,21 +36,21 @@ const Home = () => {
                             user={data.results[1]}
                         />
                     </div>
-                    <div className="navigation-btns">
-                        <NavigationBtn
-                            icon="navigate_before"
-                            type="navigation-btn-before"
-                        />
-                        <NavigationBtn
-                            icon="navigate_next"
-                            type="navigation-btn-next"
-                        />
-                    </div>
                 </div>
             )}
             {/* {data && console.log(data)} */}
             {isPending && <div>Loading ...</div>}
             {error && <div>{error}</div>}
+            <div className="navigation-btns">
+                <NavigationBtn
+                    icon="navigate_before"
+                    type="navigation-btn-before"
+                />
+                <NavigationBtn
+                    icon="navigate_next"
+                    type="navigation-btn-next"
+                />
+            </div>
         </div>
     );
 };
