@@ -34,7 +34,7 @@ const UserTile = () => {
                     <p className="user-text-info-item user-country">Germany</p>
                 </div>
             </div>
-            <button className="user-details-btn">Details</button>
+            {/* <button className="user-details-btn">Details</button> */}
         </div>
     );
 };
