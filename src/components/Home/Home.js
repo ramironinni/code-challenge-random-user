@@ -1,7 +1,15 @@
+import './Home.css';
+import UserTile from './UserTile/UserTile';
+
 const Home = () => {
     return (
         <div className="home">
-            <h1>Meet</h1>
+            <div className="user-tile-container">
+                <UserTile />
+                {/* <UserTile />
+                <UserTile />
+                <UserTile /> */}
+            </div>
         </div>
     );
 };

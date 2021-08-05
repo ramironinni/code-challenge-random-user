@@ -4,7 +4,8 @@
 :root {
     --color-primary: #2876be;
     --color-secondary: #4fbe7a;
-    --color-light: #f0f0f0;
+    --color-light: #f8f8f8;
+    --color-light-grey: #ececec;
     --color-grey: #cfcfcf;
     --color-dark: #2e2e2e;
 }
