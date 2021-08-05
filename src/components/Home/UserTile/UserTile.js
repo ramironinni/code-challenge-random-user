@@ -24,7 +24,7 @@ const UserTile = () => {
                         apartment
                     </span>
                     <p className="user-text-info-item user-city">
-                        Bad Gottleuba-Berggießhübel
+                        Bad Gottleuba
                     </p>
                 </div>
                 <div className="user-text-info-item-container">
@@ -34,6 +34,7 @@ const UserTile = () => {
                     <p className="user-text-info-item user-country">Germany</p>
                 </div>
             </div>
+            <button className="user-details-btn">Details</button>
         </div>
     );
 };

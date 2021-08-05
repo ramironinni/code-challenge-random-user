@@ -3,7 +3,7 @@
 
 :root {
     --color-primary: #2876be;
-    --color-secondary: #4fbe7a;
+    --color-secondary: #88daa7;
     --color-light: #f8f8f8;
     --color-light-grey: #ececec;
     --color-grey: #cfcfcf;
@@ -25,4 +25,12 @@ h1 {
     margin: 0;
     font-size: 1rem;
     font-weight: 400;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
 }

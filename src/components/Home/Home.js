@@ -1,4 +1,5 @@
 import './Home.css';
+import NavigationBtns from './NavigationBtnsContainer/NavigationBtnsContainer';
 import UserTile from './UserTile/UserTile';
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
                 <UserTile />
                 <UserTile /> */}
             </div>
+            <NavigationBtns />
         </div>
     );
 };
