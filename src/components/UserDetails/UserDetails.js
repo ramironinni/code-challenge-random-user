@@ -1,5 +1,7 @@
 import { useHistory, useLocation } from 'react-router-dom';
 import TextInfo from './TextInfo/TextInfo';
+import './UserDetails.css';
+import { Link } from 'react-router-dom';
 
 const UserDetails = () => {
     const history = useHistory();
@@ -7,9 +9,9 @@ const UserDetails = () => {
     const user = data.state.user;
 
     return (
-        <div className="UserDetails">
+        <div className="user-details">
             <div className="user-details-tile">
-                <div className="user-details-picture">
+                <div className="user-details-picture-container">
                     <img src={user.picture.large} alt="user" />
                 </div>
                 <div className="user-details-text-info-container">
@@ -24,13 +26,12 @@ const UserDetails = () => {
                 </div>
             </div>
 
-            <button
-                className="user-details-go-back"
+            <Link
+                className="user-details-go-back-btn"
                 onClick={() => history.push('/')}
             >
                 <span className="material-icons">navigate_before</span> Go back
-            </button>
-            <div>{console.log(user)}</div>
+            </Link>
         </div>
     );
 };
