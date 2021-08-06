@@ -1,3 +1,5 @@
+import './PaginationBtn.css';
+
 const PaginationBtn = ({ icon, type, changePage, handleClick }) => {
     return (
         <button

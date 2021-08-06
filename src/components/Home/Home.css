@@ -1,6 +1,7 @@
 .home {
     height: 100%;
-    background-color: var(--color-light);
+    background-color: #85a5a5;
+    /* background-color: var(--color-light); */
 }
 
 .wrapper {
@@ -34,7 +35,7 @@
 
 .pagination-container {
     position: absolute;
-    bottom: 0.5rem;
+    bottom: 1rem;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -54,28 +55,6 @@
     justify-content: center;
     padding: 0 1rem;
     width: 2.5rem;
-}
-
-.pagination-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5rem;
-    padding: 0.3rem;
-    color: var(--color-light);
-    background-color: var(--color-primary);
-}
-
-.pagination-btn:hover {
-    background-color: var(--color-primary-hover);
-}
-
-.pagination-btn-before {
-    left: 1rem;
-}
-
-.pagination-btn-next {
-    right: 1rem;
 }
 
 @media (min-width: 720px) {
