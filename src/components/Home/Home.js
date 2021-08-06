@@ -51,7 +51,11 @@ const Home = () => {
                 </div>
             )}
             {/* {data && console.log(data)} */}
-            {isPending && <div>Loading ...</div>}
+            {isPending && (
+                <div className="users-loading-container">
+                    <div className="users-loading">Loading ...</div>
+                </div>
+            )}
             {error && <div>{error}</div>}
             <div className="pagination-container">
                 <div className="pagination-controllers">

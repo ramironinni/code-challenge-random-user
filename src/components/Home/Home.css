@@ -12,6 +12,18 @@
     justify-content: center;
 }
 
+.users-loading-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.users-loading {
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--color-light-grey);
+}
+
 .user-tiles-container {
     display: flex;
     flex-wrap: wrap;
