@@ -27,8 +27,9 @@ const UserDetails = () => {
             </div>
 
             <Link
+                to="/"
                 className="user-details-go-back-btn"
-                onClick={() => history.push('/')}
+                // onClick={() => history.push('/')}
             >
                 <span className="material-icons">navigate_before</span> Go back
             </Link>

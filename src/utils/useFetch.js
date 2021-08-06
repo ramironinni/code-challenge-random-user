@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useFetch = (url) => {
+const useFetch = (url, page) => {
     const [data, setData] = useState(null);
     const [isPending, setIsPending] = useState(true);
     const [error, setError] = useState(null);
@@ -9,7 +9,9 @@ const useFetch = (url) => {
         const abortCont = new AbortController();
 
         const getData = async () => {
-            const response = await fetch(url, { signal: abortCont.signal });
+            const response = await fetch(url + page, {
+                signal: abortCont.signal,
+            });
 
             if (!response.ok) {
                 throw Error('could not fetch the data for that resource');
@@ -36,7 +38,7 @@ const useFetch = (url) => {
             });
 
         return () => abortCont.abort();
-    }, [url]);
+    }, [url, page]);
 
     return { data, isPending, error };
 };
