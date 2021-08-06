@@ -18,6 +18,18 @@ const Home = () => {
     const [page, setPage] = useState(1);
     const [results, setResults] = useState(resultValue);
 
+    const handleResize = () => {
+        if (window.matchMedia('(min-width: 1024px)').matches) {
+            setResults(8);
+        } else if (window.matchMedia('(min-width: 720px)').matches) {
+            setResults(4);
+        } else {
+            setResults(2);
+        }
+    };
+
+    window.addEventListener('resize', handleResize);
+
     const { data, isPending, error } = useFetch(
         `https://randomuser.me/api/?inc=name,location,email,login,picture&results=${results}&seed=abc&page=`,
         page,
