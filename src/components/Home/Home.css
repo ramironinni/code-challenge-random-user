@@ -1,4 +1,5 @@
 .home {
+    position: relative;
     height: 100%;
     background-color: var(--color-light);
 }
@@ -57,7 +58,20 @@
 }
 
 @media (min-width: 720px) {
+    .wrapper {
+        height: 100%;
+    }
+
     .pagination-container {
-        bottom: 2rem;
+        position: static;
+        display: block;
+    }
+
+    .pagination-controllers {
+        position: static;
+        background-color: transparent;
+    }
+    .pagination-current-page-number {
+        display: none;
     }
 }

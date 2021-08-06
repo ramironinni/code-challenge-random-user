@@ -19,3 +19,11 @@
 .pagination-btn-next {
     right: 1rem;
 }
+
+@media (min-width: 720px) {
+    .pagination-btn-before,
+    .pagination-btn-next {
+        position: absolute;
+        top: 50%;
+    }
+}
