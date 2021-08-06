@@ -1,7 +1,7 @@
-const NavigationBtn = ({ icon, type, changePage, handleClick }) => {
+const PaginationBtn = ({ icon, type, changePage, handleClick }) => {
     return (
         <button
-            className={'navigation-btn ' + type}
+            className={'pagination-btn ' + type}
             onClick={(e) => {
                 handleClick(changePage);
             }}
@@ -11,4 +11,4 @@ const NavigationBtn = ({ icon, type, changePage, handleClick }) => {
     );
 };
 
-export default NavigationBtn;
+export default PaginationBtn;

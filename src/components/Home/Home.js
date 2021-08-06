@@ -1,7 +1,7 @@
 import useFetch from '../../utils/useFetch';
 import './Home.css';
 import UserTile from './UserTile/UserTile';
-import NavigationBtn from './NavigationBtn/NavigationBtn';
+import PaginationBtn from './PaginationBtn/PaginationBtn';
 import { useState } from 'react';
 
 const Home = () => {
@@ -43,19 +43,22 @@ const Home = () => {
             {/* {data && console.log(data)} */}
             {isPending && <div>Loading ...</div>}
             {error && <div>{error}</div>}
-            <div className="navigation-btns">
-                <NavigationBtn
-                    icon="navigate_before"
-                    type="navigation-btn-before"
-                    changePage="-1"
-                    handleClick={handleClick}
-                />
-                <NavigationBtn
-                    icon="navigate_next"
-                    type="navigation-btn-next"
-                    changePage="1"
-                    handleClick={handleClick}
-                />
+            <div className="pagination-container">
+                <div className="pagination-controllers">
+                    <PaginationBtn
+                        icon="navigate_before"
+                        type="pagination-btn-before"
+                        changePage="-1"
+                        handleClick={handleClick}
+                    />
+                    <div className="pagination-current-page-number">{page}</div>
+                    <PaginationBtn
+                        icon="navigate_next"
+                        type="pagination-btn-next"
+                        changePage="1"
+                        handleClick={handleClick}
+                    />
+                </div>
             </div>
         </div>
     );
