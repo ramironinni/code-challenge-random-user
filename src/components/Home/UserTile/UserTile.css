@@ -12,7 +12,17 @@
     color: var(--color-dark);
     background-color: var(--color-light-grey);
     text-decoration: none;
-    /* box-shadow: 0.1rem 0.1rem 0.5rem 0 #0000004f; */
+    animation: tile-in 0.4s;
+    transition: background-color 0.2s;
+}
+
+@keyframes tile-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .user-tile:hover,

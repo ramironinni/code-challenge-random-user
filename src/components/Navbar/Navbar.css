@@ -11,4 +11,7 @@
 .navbar-icon {
     position: absolute;
     left: 1rem;
+    color: var(--color-light);
+    text-decoration: none;
+    cursor: pointer;
 }

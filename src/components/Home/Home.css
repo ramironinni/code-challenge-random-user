@@ -66,6 +66,10 @@
     background-color: var(--color-primary);
 }
 
+.pagination-btn:hover {
+    background-color: var(--color-primary-hover);
+}
+
 .pagination-btn-before {
     left: 1rem;
 }

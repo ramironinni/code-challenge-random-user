@@ -7,6 +7,16 @@
     padding: 0 1.5rem 1.5rem;
     background-color: var(--color-light-grey);
     font-size: 0.8rem;
+    animation: details-in 0.4s;
+}
+
+@keyframes details-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .user-details-tile {

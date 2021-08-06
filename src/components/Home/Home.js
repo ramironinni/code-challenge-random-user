@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 const Home = () => {
     let resultValue;
+
     if (window.matchMedia('(min-width: 1024px)').matches) {
         resultValue = 8;
     } else if (window.matchMedia('(min-width: 720px)').matches) {
