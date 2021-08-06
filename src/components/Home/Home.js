@@ -61,6 +61,25 @@ const Home = () => {
                             />
                         ))}
                     </div>
+                    <div className="pagination-container">
+                        <div className="pagination-controllers">
+                            <PaginationBtn
+                                icon="navigate_before"
+                                type="pagination-btn-before"
+                                changePage="-1"
+                                handleClick={handleClick}
+                            />
+                            <div className="pagination-current-page-number">
+                                {page}
+                            </div>
+                            <PaginationBtn
+                                icon="navigate_next"
+                                type="pagination-btn-next"
+                                changePage="1"
+                                handleClick={handleClick}
+                            />
+                        </div>
+                    </div>
                 </div>
             )}
             {isPending && (
@@ -69,23 +88,6 @@ const Home = () => {
                 </div>
             )}
             {error && <div>{error}</div>}
-            <div className="pagination-container">
-                <div className="pagination-controllers">
-                    <PaginationBtn
-                        icon="navigate_before"
-                        type="pagination-btn-before"
-                        changePage="-1"
-                        handleClick={handleClick}
-                    />
-                    <div className="pagination-current-page-number">{page}</div>
-                    <PaginationBtn
-                        icon="navigate_next"
-                        type="pagination-btn-next"
-                        changePage="1"
-                        handleClick={handleClick}
-                    />
-                </div>
-            </div>
         </div>
     );
 };
