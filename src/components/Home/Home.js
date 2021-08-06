@@ -15,7 +15,7 @@ const Home = () => {
 
     const handleClick = (changePage) => {
         changePage = Number(changePage);
-        if (page > 0 && page <= 50) {
+        if ((changePage > 0 && page <= 50) || (changePage < 0 && page > 1)) {
             setPage(page + changePage);
         }
     };
