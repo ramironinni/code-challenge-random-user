@@ -34,11 +34,10 @@
 }
 
 .pagination-container {
-    position: absolute;
-    bottom: 1rem;
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 2rem;
 }
 
 .pagination-controllers {
@@ -63,12 +62,10 @@
     }
 
     .pagination-container {
-        position: static;
         display: block;
     }
 
     .pagination-controllers {
-        position: static;
         background-color: transparent;
     }
     .pagination-current-page-number {
