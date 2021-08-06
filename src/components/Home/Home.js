@@ -5,12 +5,22 @@ import PaginationBtn from './PaginationBtn/PaginationBtn';
 import { useState } from 'react';
 
 const Home = () => {
+    let resultValue;
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+        resultValue = 8;
+    } else if (window.matchMedia('(min-width: 720px)').matches) {
+        resultValue = 4;
+    } else {
+        resultValue = 2;
+    }
+
     const [page, setPage] = useState(1);
-    const [results, setResults] = useState(2);
+    const [results, setResults] = useState(resultValue);
 
     const { data, isPending, error } = useFetch(
         `https://randomuser.me/api/?inc=name,location,email,login,picture&results=${results}&seed=abc&page=`,
-        page
+        page,
+        results
     );
 
     const handleClick = (changePage) => {

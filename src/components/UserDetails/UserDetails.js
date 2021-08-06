@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom';
+import GoBackBtn from '../GoBackBtn/GoBackBtn';
 import TextInfo from './TextInfo/TextInfo';
 import './UserDetails.css';
-import { Link } from 'react-router-dom';
 
 const UserDetails = () => {
     const data = useLocation();
@@ -25,11 +25,7 @@ const UserDetails = () => {
                         <TextInfo text={user.location.country} icon="public" />
                     </div>
                 </div>
-
-                <Link to="/" className="user-details-go-back-btn">
-                    <span className="material-icons">navigate_before</span> Go
-                    back
-                </Link>
+                <GoBackBtn />
             </div>
         </div>
     );

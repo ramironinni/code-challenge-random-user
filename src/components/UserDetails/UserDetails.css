@@ -33,19 +33,3 @@
     background-color: var(--color-light);
     width: 100%;
 }
-
-.user-details-go-back-btn {
-    display: flex;
-    align-items: center;
-    margin-top: 1.5rem;
-    padding: 0.3rem 1rem 0.3rem 0.5rem;
-    border-radius: 1rem;
-    color: var(--color-light);
-    background-color: var(--color-primary);
-    text-decoration: none;
-}
-
-.user-details-go-back-btn:hover,
-.user-details-go-back-btn:focus {
-    background-color: var(--color-primary-hover);
-}
