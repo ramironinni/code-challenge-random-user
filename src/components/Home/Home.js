@@ -63,7 +63,6 @@ const Home = () => {
                     </div>
                 </div>
             )}
-            {/* {data && console.log(data)} */}
             {isPending && (
                 <div className="users-loading-container">
                     <div className="users-loading">Loading ...</div>
