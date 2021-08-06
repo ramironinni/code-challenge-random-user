@@ -1,7 +1,6 @@
 .home {
     height: 100%;
-    background-color: #85a5a5;
-    /* background-color: var(--color-light); */
+    background-color: var(--color-light);
 }
 
 .wrapper {
