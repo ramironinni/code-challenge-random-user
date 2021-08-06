@@ -7,7 +7,7 @@ import NotFound from '../NotFound/NotFound';
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <div className="App">
                 <Navbar />
                 <Switch>
