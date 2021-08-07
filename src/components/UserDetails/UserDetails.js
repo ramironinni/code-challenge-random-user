@@ -9,7 +9,7 @@ const UserDetails = () => {
 
     return (
         <div className="user-details">
-            <div className="wrapper">
+            <div className="user-details-wrapper">
                 <div className="user-details-tile">
                     <div className="user-details-picture-container">
                         <img src={user.picture.large} alt="user" />

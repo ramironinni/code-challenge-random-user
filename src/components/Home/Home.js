@@ -46,7 +46,7 @@ const Home = () => {
     return (
         <div className="home">
             {data && (
-                <div className="wrapper">
+                <div className="home-wrapper">
                     <div className="user-tiles-container">
                         {data.results.map((user, index) => (
                             <UserTile

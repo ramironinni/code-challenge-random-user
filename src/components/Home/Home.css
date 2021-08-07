@@ -1,16 +1,15 @@
 .home {
-    position: relative;
-    height: 100%;
     background-color: var(--color-light);
 }
 
-.wrapper {
+.home-wrapper {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 .users-loading-container {
@@ -57,11 +56,13 @@
 }
 
 @media (min-width: 720px) {
-    .wrapper {
+    .home-wrapper {
         height: 100%;
+        flex-direction: row;
     }
 
     .pagination-container {
+        position: absolute;
         display: block;
     }
 

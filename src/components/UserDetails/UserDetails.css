@@ -19,6 +19,14 @@
     }
 }
 
+.user-details-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .user-details-tile {
     position: relative;
     display: flex;
