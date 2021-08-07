@@ -1,5 +1,6 @@
 import './UserTile.css';
 import { Link } from 'react-router-dom';
+import TextInfoItemContainer from './TextInfoItemContainer/TextInfoItemContainer';
 
 const UserTile = ({ picture, fullName, city, country, user }) => {
     return (
@@ -11,28 +12,9 @@ const UserTile = ({ picture, fullName, city, country, user }) => {
                 <img className="user-img" src={picture} alt="user-profile" />
             </div>
             <div className="user-text-info-container">
-                <div className="user-text-info-item-container">
-                    <span className="user-text-info-icon material-icons">
-                        person
-                    </span>
-                    <p className="user-text-info-item user-full-name">
-                        {fullName}
-                    </p>
-                </div>
-                <div className="user-text-info-item-container">
-                    <span className="user-text-info-icon material-icons">
-                        apartment
-                    </span>
-                    <p className="user-text-info-item user-city">{city}</p>
-                </div>
-                <div className="user-text-info-item-container">
-                    <span className="user-text-info-icon material-icons">
-                        public
-                    </span>
-                    <p className="user-text-info-item user-country">
-                        {country}
-                    </p>
-                </div>
+                <TextInfoItemContainer text={fullName} icon="person" />
+                <TextInfoItemContainer text={city} icon="apartment" />
+                <TextInfoItemContainer text={country} icon="public" />
             </div>
         </Link>
     );
